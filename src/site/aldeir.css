@@ -264,3 +264,34 @@ details{background:var(--surface);border-color:transparent;box-shadow:0 6px 18px
 .ab ul{list-style:disc}
 .timeline,.foot ul,.esc-lista{list-style:none}
 button{font:inherit}
+
+/* ===== Refinamento visual ===== */
+.escuta h2,.sobre h2,#como h2,.lanc h2,form.lista h3{font-weight:700}
+.sec-head h2{letter-spacing:-.03em}
+/* Abordagens como cartões iguais */
+.abord{gap:1.4rem;border-top:0}
+.ab,.ab+.ab{padding:1rem 1rem 1.8rem;border:0;background:var(--surface);border-radius:22px;box-shadow:0 14px 34px rgba(22,66,60,.10);transition:transform .25s ease,box-shadow .25s ease}
+.ab > *:not(.abimg){margin-inline:.6rem}
+.abimg{border-radius:16px;margin-bottom:.6rem}
+.ab:hover,.pcard:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(22,66,60,.18)}
+.pcard{transition:transform .25s ease,box-shadow .25s ease}
+.pcard .ic{box-shadow:0 8px 18px rgba(22,66,60,.15)}
+@media (max-width:900px){.ab,.ab+.ab{padding:1rem 1rem 1.6rem}}
+/* Imagens com leve zoom ao passar o mouse */
+.pcard,.ab{overflow:hidden}
+.pimg,.abimg,.photo-arch img,.esc-foto img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pcard:hover .pimg,.ab:hover .abimg,.photo-arch:hover img,.esc-foto:hover img{transform:scale(1.04)}
+/* Faixa de citação centralizada */
+.faixa .wrap{display:flex;justify-content:center}
+.faixa p{text-align:center;max-width:18em}
+/* Botões e cartões mais refinados */
+.btn-ipe{box-shadow:0 10px 24px rgba(233,180,44,.35)}
+.btn-ipe:hover{box-shadow:0 14px 30px rgba(233,180,44,.45)}
+.lanc-box{box-shadow:0 30px 70px rgba(22,66,60,.18);border-color:transparent}
+.countdown{box-shadow:0 24px 50px rgba(0,0,0,.25)}
+details{transition:box-shadow .2s}
+details:hover{box-shadow:0 10px 26px rgba(22,66,60,.14)}
+details[open]{box-shadow:0 12px 30px rgba(22,66,60,.14)}
+nav.menu a{position:relative}
+nav.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--ipe);border-radius:2px;transition:right .25s ease}
+nav.menu a:hover::after{right:0}
