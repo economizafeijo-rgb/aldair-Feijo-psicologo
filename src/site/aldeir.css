@@ -152,7 +152,7 @@ section{padding-block:clamp(3.5rem,8vw,6.5rem)}
 .lanc-date .big{color:var(--ipe);font:800 clamp(5rem,12vw,8.5rem)/.85 var(--display);letter-spacing:-.04em}
 .lanc-date .mes{font:700 1.6rem/1 var(--display);text-transform:uppercase;letter-spacing:.06em}
 .lanc-date p{max-width:24em;font-weight:500}
-.lanc-date::after{content:"Ψ";position:absolute;right:-.05em;bottom:-.22em;font:800 22rem/1 var(--display);color:rgba(233,180,44,.10);pointer-events:none}
+.lanc-date::after{content:"";position:absolute;right:-40px;bottom:-30px;width:340px;height:230px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-14%20-9%2028%2019%22%3E%3Cg%20fill%3D%22%23E9B42C%22%3E%3Cpath%20d%3D%22M0%200C-2-6-9.5-9.5-12-6.2-14.2-3.2-9.6%201.6%200%201.2Z%22/%3E%3Cpath%20d%3D%22M0%200C2-6%209.5-9.5%2012-6.2%2014.2-3.2%209.6%201.6%200%201.2Z%22/%3E%3Cpath%20d%3D%22M0%201.2C-6.5%201.6-10.2%204.6-8.4%207.6-6.6%2010.2-2%208%200%202.6Z%22/%3E%3Cpath%20d%3D%22M0%201.2C6.5%201.6%2010.2%204.6%208.4%207.6%206.6%2010.2%202%208%200%202.6Z%22/%3E%3C/g%3E%3C/svg%3E") no-repeat center/contain;opacity:.13;transform:rotate(-14deg);pointer-events:none}
 .lanc-date .mes{color:#F3F7F4}
 .lanc-date .local{display:inline-flex;gap:.4rem;align-items:center;margin-top:1rem;background:var(--ipe);color:#2A1E00;font-weight:700;font-size:.95rem;padding:.4rem .9rem;border-radius:999px}
 form.lista{padding:clamp(1.6rem,4vw,3rem);display:grid;gap:1rem;align-content:start}
